@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAU - Szyfr Cezara</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+	<body>
+		<main>
+			<h1>Szyfr Cezara</h1>
+			<textarea placeholder="Tekst wejściowy" id="inputValue" maxlength="1500"></textarea>
+			<div class="input-group">
+				<label for="stepValue">Przesunięcie</label>
+				<input id="stepValue" type="number" min="0" max="50" step="1" value="1">
+			</div>
+			<div class="input-group">
+				<label for="mode">Tryb</label>
+				<select id="mode" value="0">
+					<option value="0">Szyfrowanie</option>
+					<option value="1">Deszyfrowanie</option>
+				</select>
+			</div>
+			<span class="label">Tekst wyjściowy:</span>
+			<textarea placeholder="Tekst wyjściowy" readonly id="outputValue" maxlength="1500"></textarea>
+		</main>
+		<div id="examples">
+			<br><br><br>
+			Gotowe przykłady:
+			<br><br>
+			<span>Polski alfabet (małe litery): </span><a type="button" href="">aąbcćdeęfghijklłmnńoóprsśtuwyzźż</a>
+			<br>
+			<br>
+			<span>Polski alfabet (wielkie litery): </span><a type="button" href="">AĄBCĆDEĘFGHIJKLŁMNŃOÓPRSŚTUWYZŹŻ</a>
+		</div>
+		<footer>
+			Przemysław Dylewski. 30054
+		</footer>
+	</body>
+</html>
